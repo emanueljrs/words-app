@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.example.wordsapp
+package com.example.wordsapp.adapters
 
 import android.content.Intent
 import android.os.Build
@@ -24,6 +24,8 @@ import android.view.accessibility.AccessibilityNodeInfo
 import android.widget.Button
 import androidx.annotation.RequiresApi
 import androidx.recyclerview.widget.RecyclerView
+import com.example.wordsapp.R
+import com.example.wordsapp.fragments.WordListFragment.Companion.LETTER
 
 /**
  * Adapter for the [RecyclerView] in [MainActivity].
@@ -69,7 +71,7 @@ class LetterAdapter :
                 context,
                 DetailActivity::class.java
             )
-            intent.putExtra(DetailActivity.LETTER, holder.button.text.toString())
+            intent.putExtra(LETTER, holder.button.text.toString())
             context.startActivity(intent)
         }
     }
