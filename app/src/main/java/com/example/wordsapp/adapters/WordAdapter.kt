@@ -32,8 +32,10 @@ import com.example.wordsapp.fragments.WordListFragment
 /**
  * Adapter for the [RecyclerView] in [DetailActivity].
  */
-class WordAdapter(private val letterId: String, context: Context) :
-    RecyclerView.Adapter<WordAdapter.WordViewHolder>() {
+class WordAdapter(
+    private val letterId: String,
+    context: Context
+) : RecyclerView.Adapter<WordAdapter.WordViewHolder>() {
 
     private val filteredWords: List<String>
 

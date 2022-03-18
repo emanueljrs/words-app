@@ -15,6 +15,7 @@
 -->
 <resources>
     <string name="app_name">Words</string>
+    <string name="word_list_fragment_label">Words that start with {letter}</string>
     <string name="detail_prefix">Words That Start With %s</string>
     <string name="action_switch_layout">Switch Layout</string>
     <string name="action_show_snackbar">Show Snackbar</string>
